@@ -1,4 +1,4 @@
-import React from 'react';
+I'mimport React from 'react';
 import { useState, useEffect, useCallback } from 'react';
 import { Header } from './Header';
 import Button from 'react-bootstrap/Button';
@@ -37,7 +37,7 @@ function App() {
   const formSubmitted = useCallback(
     (event) => {
       event.preventDefault();
-      console.log('Form was submitted!');
+      console.log('sukces');
       console.log(brewery);
       getBreweries(brewery);
     },
@@ -93,7 +93,7 @@ function App() {
                 onChange={onLocChange}
                 onClick={clearOnInputClick}
               />
-              <Button variant='warning' className='btn primary inside'>
+              <Button variant='danger' className='btn primary inside'>
                 SEARCH
               </Button>
             </form>
